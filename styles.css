@@ -6,6 +6,7 @@
   --heading-text: #5A201A;
   --primary-text: #2A2825;
   --secondary-text: #F4F2EE;
+  --blockquote-text: #d4d3d2;
   --primary-accent-color: #fdb453;
   --primary-accent-hover: #facc90;
   --secondary-accent-color: #82B541;
@@ -16,6 +17,11 @@
 body {
   background-color: var(--primary-background);
   color: var(--primary-text);
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
