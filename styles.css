@@ -1,0 +1,52 @@
+:root {
+  --primary-background: #F5F3EE;
+  --secondary-background: #0F1A26;
+  --accent-background:#2a4612;
+  --heading-text: #5A201A;
+  --primary-text: #2A2825;
+  --secondary-text: #F4F2EE;
+  --primary-accent-color: #fdb453;
+  --primary-accent-hover: #facc90;
+  --secondary-accent-color: #82B541;
+  --tertiary-accent-color: #5d2512;
+  --tertiary-accent-hover:rgb(131, 60, 36);
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin', sans-serif;
+  color: var(--heading-text);
+}
+
+a {
+  color: var(--tertiary-accent-color) !important;
+}
+
+a:hover {
+  color: var(--tertiary-accent-hover) !important;
+}
+
+button,
+a.btn {
+  background-color: var(--primary-accent-color) !important;
+  color: var(--primary-text) !important;
+  border: 1px solid var(--primary-text) !important;
+}
+
+button:hover,
+a.btn:hover {
+  background-color: var(--primary-accent-hover) !important;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.icon-inline {
+  width: 25px;
+  height: 25px;
+}
