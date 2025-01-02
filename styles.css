@@ -1,4 +1,5 @@
 :root {
+  --nav-background:rgb(255, 254, 252);
   --primary-background: #F5F3EE;
   --secondary-background: #0F1A26;
   --accent-background:#2a4612;
@@ -50,3 +51,77 @@ a.btn:hover {
   width: 25px;
   height: 25px;
 }
+
+/* styled list */
+
+.styled-list {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.styled-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.styled-list li::before {
+  content: '✓'; /* Adding a checkmark bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: var(--secondary-accent-color); /* You can replace with any primary color you prefer */
+}
+
+.styled-list li:last-child {
+  margin-bottom: 0; /* Remove the bottom margin for the last item */
+}
+
+.styled-list li {
+  font-weight: 500; /* Bold font for list items */
+}
+
+/* about page overlap effect */
+
+#about {
+  position: relative;
+}
+
+.left-card {
+  position: relative;
+  top: 1rem; /* Adjust this value to control how much the card overlaps */
+  margin-right: -3rem; /* Adjust to pull the card towards the image */
+  z-index: 1;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.right-img {
+  height: 300px; /* Optional: Restrict image height */
+  object-fit: cover;
+  width: 100%''
+}
+
+.left-img {
+  height: 300px;
+  width: 100%; /* Ensure the image is responsive */
+  object-fit: cover; /* Ensure the image maintains aspect ratio */
+}
+
+.right-card {
+  position: relative;
+  top: -3rem; /* Adjust this value to overlap with the image */
+  margin-left: -2rem; /* Adjust this to pull the card closer to the image */
+  z-index: 1; /* Ensure the card appears on top of the image */
+  padding: 1.5rem;
+}
+
+/* counter */
+
