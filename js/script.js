@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }, { threshold: .8 }); // Trigger when 80% of the counter is in view
 
-  // Observe the counter element (this line is now only called if the element exists)
-  observer.observe(counterElement);
+  // Check again if the element exists before observing
+  if (counterElement) {
+    // Observe the counter element
+    observer.observe(counterElement);
+  } else {
+    console.warn('Counter element not found for observation!');
+  }
 });
