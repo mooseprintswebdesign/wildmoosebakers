@@ -1,9 +1,15 @@
 // // Smooth scrolling for CTA button
-// document.getElementById('learn-more').addEventListener('click', function(event) {
-//   document.getElementById('about').scrollIntoView({
-//       behavior: 'smooth'
-//   });
-// });
+const learnMoreButton = document.getElementById('learn-more');
+if (learnMoreButton) {
+  learnMoreButton.addEventListener('click', function(event) {
+    const featuresSection = document.getElementById('features');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+}
 
 // Counter
 document.addEventListener("DOMContentLoaded", function() {
