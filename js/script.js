@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Check if the counter element exists
   if (!counterElement) return; // Exit if the element doesn't exist
-  
+
   let currentNumber = 0;
   const targetNumber = 45;
   const speed = 30; // Speed of increment (milliseconds)
@@ -45,6 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }, { threshold: .8 }); // Trigger when 80% of the counter is in view
 
-  // Observe the counter element
+  // Observe the counter element (this line is now only called if the element exists)
   observer.observe(counterElement);
 });
