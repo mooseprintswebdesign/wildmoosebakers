@@ -14,6 +14,10 @@ if (learnMoreButton) {
 // Counter
 document.addEventListener("DOMContentLoaded", function() {
   const counterElement = document.getElementById('counter');
+
+  // Check if the counter element exists
+  if (!counterElement) return; // Exit if the element doesn't exist
+  
   let currentNumber = 0;
   const targetNumber = 45;
   const speed = 30; // Speed of increment (milliseconds)
